@@ -1,0 +1,8 @@
+[2020-07-04 07:49:37.181] [renderer1] [error] net::ERR_INTERNET_DISCONNECTED: Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:2623:21)
+    at SimpleURLLoaderWrapper.emit (events.js:203:13)
+[2020-07-04 07:50:09.559] [renderer1] [error] net::ERR_INTERNET_DISCONNECTED: Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:2623:21)
+    at SimpleURLLoaderWrapper.emit (events.js:203:13)
+[2020-07-04 07:50:18.507] [renderer1] [error] Error: [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
+[2020-07-04 07:50:18.581] [renderer1] [error] [File Watcher (chokidar)] Inotify limit reached (ENOSPC)
