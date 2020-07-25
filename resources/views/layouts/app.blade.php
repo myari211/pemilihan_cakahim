@@ -55,9 +55,6 @@
                                 Vote Ketua&nbsp;<span class="material-icons" style="font-size:20px">create</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <p>Tes</p>
-                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -74,20 +71,20 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <button id="navbarDropdown" class="btn btn-primary nav-link dropdown-toggle text-black d-flex justify-content-between" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <button id="navbarDropdown" class="btn btn-primary nav-link dropdown-toggle text-black d-inline-flex justify-content-between align-items-center p-2 shadow" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                    <span class="material-icons text-white">person</span><span class="caret"></span><br />
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right shadow bg-primary" aria-labelledby="navbarDropdown">
                                     <div class="row">
-                                        <div class="col-md-12 md-p-2 p4">
-                                                <p class="text-md-center text-white p-2">{{ Auth::user()->name }}</p>
-                                                <p class="text-md-center text-white p-2">{{ Auth::user()->jurusan }} | Semester {{ Auth::user()->semester }} </p>
-                                                <p class="text-md-center text-white blockquote-footer p-2">{{ Auth::user()->nim }}</p>                                         
+                                        <div class="col-md-12 md-p-2">
+                                                <p class="text-center text-white p-2">{{ Auth::user()->name }}</p>
+                                                <p class="text-center text-white p-2">{{ Auth::user()->jurusan }} | Semester {{ Auth::user()->semester }} </p>
+                                                <p class="text-center text-white blockquote-footer p-2">{{ Auth::user()->nim }}</p>                                         
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-10 mx-auto">
-                                            <button type="button" class="btn btn-danger col-md-12 mx-auto" href="{{ route('logout') }}"
+                                        <div class="col-md-10 mx-auto d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-danger shadow" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
                                                 {{ __('Logout') }}
@@ -109,13 +106,6 @@
             @yield('content')
         </main>
 
-        <div class="row">
-            <div class="card">
-                <div class="card-body bg-primary">
-                    <p>Himpunan Mahasiswa Informatika &copy; all rights reserved</p>
-                </div>
-            </div>
-        </div>
     </div>
 
 

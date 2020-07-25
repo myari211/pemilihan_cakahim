@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-md">
-            <div class="card mx-auto" style="width: 22rem; ">
+            <div class="card mx-auto shadow" style="width: 22rem; ">
                 <img class="card-img-top" src="{{ asset('img/david.jpeg') }}" style="height: 250px">
                 <div class="card-body">
                     <div class="row-group">
@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="accordion mx-auto mt-2" id="accordionExample" style="width: 20rem;">
                             <div class="card">
-                                <button id="headingOne" class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                <button id="headingOne" class="btn btn-primary text-center collapsed shadow d-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
                                     Biodata<span class="material-icons">playlist_play</span>
                                 </button>
                                 <div id="collapseOne1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="col-md mt-md-0 mt-4">
-            <div class="card mx-auto" style="width: 22rem;">
+            <div class="card mx-auto shadow" style="width: 22rem;">
                 <img class="card-img-top" src="{{ asset('img/iqbal.jpeg') }}" style="height: 250px">
                 <div class="card-body">
                     <div class="row-group">     
@@ -47,7 +47,7 @@
                     <div class="row">
                         <div class="accordion mx-auto mt-2" id="accordionExample" style="width: 20rem;">
                             <div class="card">
-                                <button id="headingTwo" class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                <button id="headingTwo" class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                                     Biodata<span class="material-icons">playlist_play</span>
                                 </button>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="col-md mt-md-0 mt-4">
-            <div class="card mx-auto" style="width: 22rem;">
+            <div class="card mx-auto shadow" style="width: 22rem;">
                 <img class="card-img-top" src="{{ asset('img/argya.jpeg') }}" style="height: 250px;">
                 <div class="card-body">
                     <div class="row-group">
@@ -84,7 +84,7 @@
                                     <div class="card-body">
                                         <div class="row-group">
                                             <p>NIM : 18171065066</p>
-                                            <p>TTL : Jakarta, 21 November 1998</p>
+                                            <p>TTL : Jakarta, 21 November 1997</p>
                                             <p>Domisili : Bekasi</p>
                                             <p>Motto Hidup : Talk Less Do More</p>
                                         </div>
@@ -103,7 +103,7 @@
     </div>
     <div class="row">
         <div class="col-md mt-md-2 mt-4">
-            <div class="card mx-auto" style="width: 22rem;">
+            <div class="card mx-auto shadow" style="width: 22rem;">
                 <img class="card-img-top" src="{{ asset('img/figi.jpeg') }}" style="height: 250px;">
                 <div class="card-body">
                     <div class="row-group">
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="col-md mt-md-2 mt-4">
-            <div class="card mx-auto" style="width: 22rem;">
+            <div class="card mx-auto shadow" style="width: 22rem;">
                 <img class="card-img-top" src="{{ asset('img/ayu.jpeg') }}" style="height: 250px;">
                 <div class="card-body">
                     <div class="row-group">        
@@ -149,9 +149,9 @@
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <div class="row-group">
-                                            <p>NIM : 18171065115</p>
-                                            <p>TTL : Jakarta, 30 November 1993</p>
-                                            <p>Domisili : Jakarta</p>
+                                            <p>NIM : 18171065024</p>
+                                            <p>TTL : Aji Buhara, 17 Mei 1998</p>
+                                            <p>Domisili : Cikarang</p>
                                             <p>Motto Hidup : Kalau orang lain bisa, aku juga pasti bisa</p>
                                         </div>
                                     </div>
@@ -163,11 +163,11 @@
             </div>
         </div>
         <div class="col-md mt-md-2 mt-4">
-            <div class="card mx-auto" style="width: 22rem;">
+            <div class="card mx-auto shadow" style="width: 22rem;">
                 <img class="card-img-top" src="{{ asset('img/rinata.jpeg') }}" style="height: 250px">
                 <div class="card-body">
                     <div class="row-group">
-                        <p class="h4 text-center">Rinata Cristian Putri</p>
+                        <p class="h4 text-center">Rinata Christian Putri</p>
                         <p class="h4 text-center"><span class="badge badge-primary">TI Sems 4</span></p>
                     </div>
                     <div class="row">

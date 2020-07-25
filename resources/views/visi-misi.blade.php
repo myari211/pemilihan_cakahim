@@ -2,9 +2,15 @@
 @section('content')
 
 <div class="container">
-    <div class="row">
+    <div class="row-group d-flex justify-content-center mx-auto">
+        <p class="h3 text-center text-primary"> VISI & MISI CAKAHIM DAN CAWAKAHIM HIMPUNAN MAHASISWA INFORMATIKA</p>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <p class="h5">Periode Tahun 2020/2021</p>
+    </div>
+    <div class="row mt-4">
         <div class="col-md">
-            <div class="card p-2 mx-auto" style="width: 22rem;">
+            <div class="card p-2 mx-auto shadow" style="width: 22rem;">
                 <img src="{{asset('img/kandidat1.PNG') }}" class="card-img-top" alt="..." style="height:250px">
                 <div class="card-body">
                     <div class="row">
@@ -16,13 +22,13 @@
                             <div class="card">
                                 <div class="card-header bg-light" id="headingOne">
                                     <h2 class="mb-0 bg-light">
-                                        <button class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
                                             Visi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseOne">
                                             Misi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button class="btn btn-primary btn-block text-center d-inline-flex justify-content-between items-align-center" type="button" data-toggle="modal" data-target="#exampleModal1">
+                                        <button class="btn btn-primary btn-block text-center d-inline-flex justify-content-between items-align-center shadow" type="button" data-toggle="modal" data-target="#exampleModal1">
                                             Video Kampanye<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
                                     </h2>
@@ -38,7 +44,7 @@
                                     <div class="card-body">
                                         <p>1. Menjadikan Himpunan Sebagai penghubung antara mahasiswa dan jajaran kampus</p>
                                         <p>2. Mendorong Mahasiswa untuk lebih meningkatkan kualitas ilmu pengetahuan dibidang Akademik dan Non Akademik</p>
-                                        <p>3. Menjalankan pengabdian masyarakat demi terwujudnya tri darma perguruan tinggi negeri</p>
+                                        <p>3. Menjalankan pengabdian masyarakat demi terwujudnya tri darma perguruan tinggi</p>
                                         <p>4. Menjadikan himpunan sebagai penampung dan penyaluran aspirasi mahasiswa</p>
                                         <p>5. Membawa nama kampus dan jurusan untuk diperlombakan di kampus lain baik bidang Akademik maupun Non Akademik</p>
                                         <p>6. Meningkatkan tali persaudaraan tanpa ada kesenjangan dan perbedaan diantara mahasiswa</p>
@@ -52,7 +58,7 @@
             </div>
         </div>
         <div class="col-md mt-md-0 mt-4">
-            <div class="card p-2 mx-auto" style="width: 22rem;">
+            <div class="card p-2 mx-auto shadow" style="width: 22rem;">
                 <img src="{{asset('img/kandidat2.PNG') }}" class="card-img-top" style="height:250px">
                 <div class="card-body">
                     <div class="row">
@@ -64,13 +70,13 @@
                             <div class="card">
                                 <div class="card-header bg-light" id="headingTwo">
                                     <h2 class="mb-0 bg-light">
-                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                             Visi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                             Misi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button type="button" class="btn btn-primary btn-block text-center d-inline-flex justify-content-between" data-toggle="modal" data-target="#exampleModal2">
+                                        <button type="button" class="btn btn-primary btn-block text-center d-inline-flex justify-content-between shadow" data-toggle="modal" data-target="#exampleModal2">
                                             Video kampanye<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
                                     </h2>
@@ -84,7 +90,7 @@
                             <div class="card">
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>1. Mewadahi, Memproses, dan melakansanakan aspirasi mahasiswa Teknik Informatika</p>
+                                        <p>1. Mewadahi, Memproses, dan melaksanakan aspirasi mahasiswa Teknik Informatika</p>
                                         <p>2. Membuat Program Edukasi/Seminar/Workshop tentang seputar informatika untuk meningkatkan skill mahasiswa Teknik Informatika dan Sistem Informasi</p>
                                         <p>3. Mempererat hubungan dan menjaga keharmonisan sesama anggota himpunan mahasiswa informatika pada umumnya</p>
                                         <p>4. mengikut sertakan perlombaan bagi mahasiswa Teknik Informatika dan Sistem Informasi yang bertalenta</p>
@@ -98,7 +104,7 @@
             </div>
         </div>
         <div class="col-md mt-md-0 mt-4">
-            <div class="card p-2 mx-auto" style="width: 22rem;">
+            <div class="card p-2 mx-auto shadow" style="width: 22rem;">
                 <img src="{{ asset('img/kandidat3.PNG') }}" class="card-img-top" style="height:250px">
                 <div class="card-body">
                     <div class="row">
@@ -110,20 +116,20 @@
                             <div class="card">
                                 <div class="card-header bg-light" id="headingOne">
                                     <h2 class="mb-0 bg-light">
-                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
                                             Visi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="btn btn-primary btn-block text-center collapsed d-inline-flex justify-content-between shadow" type="button" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="true" aria-controls="collapseOne">
                                             Misi<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
-                                        <button type="button" class="btn btn-primary btn-block text-center d-inline-flex justify-content-between" data-toggle="modal" data-target="#exampleModal3">
+                                        <button type="button" class="btn btn-primary btn-block text-center d-inline-flex justify-content-between shadow" data-toggle="modal" data-target="#exampleModal3">
                                             Video Kampanye<span class="material-icons">keyboard_arrow_down</span>
                                         </button>
                                     </h2>
                                 </div>
                                 <div id="collapseOne3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body text-center">
-                                        Membangun himpunan mahasiswa informatika bersama seluruh mahasiswa akti TI untuk mewujudkan himpunan yang amanah, solid, kreatif, berkarakter, dan berkualitas serta menjunjung tinggi asas kekeluargaan dan tanggung jawab sebagai mahasiswa.
+                                        Membangun himpunan mahasiswa informatika bersama seluruh mahasiswa aktif TI untuk mewujudkan himpunan yang amanah, solid, kreatif, berkarakter, dan berkualitas serta menjunjung tinggi asas kekeluargaan dan tanggung jawab sebagai mahasiswa.
                                     </div>
                                 </div>
                             </div>

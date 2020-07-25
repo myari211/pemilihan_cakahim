@@ -41,8 +41,8 @@
     </style>
 </head>
 <body class="bg-primary">
-   <div class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
+   <div class="container h-150">
+        <div class="d-flex align-items-center justify-content-center h-150">
             <div class="col-md d-flex align-items-center justify-content-center">
                 <div class="card text-white mb-3 bg-transparent shadow" style="width: 800px; min-height:400px; max-height:800px;">
                     <div class="card-body d-flex justify-content-between p-0 shadow-lg">
