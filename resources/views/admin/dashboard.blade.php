@@ -151,13 +151,55 @@
 
 
     <!-- MAIN -->
+    <div class="col">
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card shadow" style="width:18rem">
+                <div class="card-header">
+                    Total Pemilih
+                </div>
+                <div class="card-body bg-dark">
+                    <p class="h3 text-white text-center">{{ $statistik }}</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-md-3">
+            <div class="card shadow" style="width:18rem">
+                <div class="card-header">
+                    Total Pemilih Kandidat 1
+                </div>
+                <div class="card-body bg-dark">
+                    <p class="h3 text-white text-center">{{ $statistik1 }}</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-md-3">
+            <div class="card shadow" style="width:18rem">
+                <div class="card-header">
+                    Total Pemilih Kandidat 2
+                </div>
+                <div class="card-body bg-dark">
+                    <p class="h3 text-white text-center">{{ $statistik2 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow" style="width:18rem">
+                <div class="card-header">
+                    Total Pemilih Kandidat 3
+                </div>
+                <div class="card-body bg-dark">
+                    <p class="h3 text-white text-center">{{ $statistik3 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row" style="margin:15px">
         <div class="col-md-6">
             <div class="card"  style="height:400px">
                 <h5 class="card-header bg-dark" style="color:white">Diagram Pemilihan</h5>
                 <div class="card-body">
                     <div id="chartVote"></div>
-                    <p>Total yang sesudah memilih : {{$statistik}}</p>
                 </div>
             </div>
         </div>
@@ -170,12 +212,8 @@
             </div>
         </div>   
     </div>
-            <div class="card" style="width:18rem">
-                <div class="card-header">
-                </div>  
-                <div class="card-body">
-                </div>
-            </div>
+    </div>
+
    
 <script>
     Highcharts.chart('chartVote', {

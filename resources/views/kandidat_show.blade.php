@@ -120,7 +120,7 @@
                                     <div class="card-body">
                                         <div class="row-group">
                                             <p>NIM : 19171065030</p>
-                                            <p>TTL : Jakarta, 08 April 1998</p>
+                                            <p>TTL : Jakarta, 04 Agustus 1998</p>
                                             <p>Domisili : Jakarta</p>
                                             <p>Motto Hidup : Kebajikan, Cinta, dan Keadilan</p>
                                         </div>
