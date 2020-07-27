@@ -152,7 +152,7 @@
 
     <!-- MAIN -->
     <div class="col">
-    <div class="row mt-4">
+    <div class="row mt-4 d-flex justify-content-center">
         <div class="col-md-3">
             <div class="card shadow" style="width:18rem">
                 <div class="card-header">
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-                <div class="col-md-3">
+        <div class="col-md-3">
             <div class="card shadow" style="width:18rem">
                 <div class="card-header">
                     Total Pemilih Kandidat 1
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    <div class="row" style="margin:15px">
+    <div class="row mt-4 d-flex justify-content-stretch">
         <div class="col-md-6">
             <div class="card"  style="height:400px">
                 <h5 class="card-header bg-dark" style="color:white">Diagram Pemilihan</h5>
@@ -212,6 +212,32 @@
             </div>
         </div>   
     </div>
+    <table class="table table-dark mt-4">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Nim</th>
+      <th scope="col">Vote</th>
+    </tr>
+  </thead>
+  <tbody>
+      @php
+      $i = 1;
+      @endphp
+      @foreach($pemilih as $p)
+    <tr>
+      <th scope="row">{{ $i++ }}</th>
+      <td>{{ $p -> name }}</td></td>
+      <td>{{ $p -> nim }}</td>
+      <td>{{ $p -> voting }}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+<div class="row d-flex justify-content-center">
+    {{ $pemilih -> links() }}
+</div>
     </div>
 
    
