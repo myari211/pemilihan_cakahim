@@ -152,9 +152,9 @@
 
     <!-- MAIN -->
     <div class="col">
-    <div class="row mt-4 d-flex justify-content-center">
+    <div class="row mt-4 d-flex justify-content-center items-align-center">
         <div class="col-md-3">
-            <div class="card shadow" style="width:18rem">
+            <div class="card shadow mx-auto" style="width:18rem">
                 <div class="card-header">
                     Total Pemilih
                 </div>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card shadow" style="width:18rem">
+            <div class="card shadow mx-auto mt-md-0 mt-4" style="width:18rem">
                 <div class="card-header">
                     Total Pemilih Kandidat 1
                 </div>
@@ -174,7 +174,7 @@
             </div>
         </div>
                 <div class="col-md-3">
-            <div class="card shadow" style="width:18rem">
+            <div class="card shadow  mt-md-0 mt-4 mx-auto" style="width:18rem">
                 <div class="card-header">
                     Total Pemilih Kandidat 2
                 </div>
@@ -184,7 +184,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card shadow" style="width:18rem">
+            <div class="card shadow  mt-md-0 mt-4 mx-auto" style="width:18rem">
                 <div class="card-header">
                     Total Pemilih Kandidat 3
                 </div>
@@ -195,22 +195,14 @@
         </div>
     </div>
     <div class="row mt-4 d-flex justify-content-stretch">
-        <div class="col-md-6">
+        <div class="col-md">
             <div class="card"  style="height:400px">
                 <h5 class="card-header bg-dark" style="color:white">Diagram Pemilihan</h5>
-                <div class="card-body">
+                <div class="card-body d-flex justify-content-center">
                     <div id="chartVote"></div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card"  style="height:400px">
-                <h5 class="card-header bg-dark" style="color:white;">Tren</h5>
-                <div class="card-body"> 
-                    <div id="semsVote"></div>
-                </div>
-            </div>
-        </div>   
     </div>
     <table class="table table-dark mt-4">
   <thead>
@@ -236,7 +228,7 @@
   </tbody>
 </table>
 <div class="row d-flex justify-content-center">
-    {{ $pemilih -> links() }}
+        {{ $pemilih -> links() }}
 </div>
     </div>
 
@@ -275,71 +267,107 @@
         name: 'Brands',
         colorByPoint: true,
         data: [{
-            name: 'Paslon 1',
+            name: 'David Dan Figi',
             y: {!!json_encode($statistik1)!!},
             sliced: true,
             selected: true
         }, {
-            name: 'Paslon 2',
+            name: 'Iqbal dan Ayu',
             y:{!!json_encode($statistik2)!!},
         },{
-            name: 'Paslon 3',
+            name: 'Argya dan Renatha',
             y:{!!json_encode($statistik3)!!},
         }]
     }]
 });
 //chart pie
-Highcharts.chart('semsVote', {
+var chart = Highcharts.chart('container', {
+
     chart: {
-        type: 'column',
-        width: 400,
-        height: 290,
-        setTitle: false,
+        type: 'column'
     },
-    title:false,
+
+    title: {
+        text: 'Highcharts responsive chart'
+    },
+
+    subtitle: {
+        text: 'Resize the frame or click buttons to change appearance'
+    },
+
+    legend: {
+        align: 'right',
+        verticalAlign: 'middle',
+        layout: 'vertical'
+    },
+
     xAxis: {
-        categories: ['Semester I',
-                     'Semester II',
-                     'Semester III',
-                     'Semester IV',
-                     'Semester V',
-                     'Semester VI',
-                     'Semester VII'],
-        crosshair: true
+        categories: ['David & Figi', 'Iqbal dan Ayu', 'Argya dan Renatha'],
+        labels: {
+            x: -10
+        }
     },
+
     yAxis: {
-        min: 0,
+        allowDecimals: false,
         title: {
-            text: '%'
+            text: 'Amount'
         }
     },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
+
     series: [{
-        name: 'Paslon 1',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5]
-
+        name: 'David dan Figi',
+        data: '{!!json_encode($statistik1)!!}',
     }, {
-        name: 'Paslon II',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3]
-
+        name: 'Iqbal dan Ayu',
+        data: '{!!json_encode($statistik2)!!}',
     }, {
-        name: 'Paslon III',
-        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6]
+        name: 'Argya dan Renatha',
+        data: '{!!json_encode($statistik3)!!}',
+    }],
 
-    }]
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                yAxis: {
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -5
+                    },
+                    title: {
+                        text: null
+                    }
+                },
+                subtitle: {
+                    text: null
+                },
+                credits: {
+                    enabled: false
+                }
+            }
+        }]
+    }
+});
+
+document.getElementById('small').addEventListener('click', function () {
+    chart.setSize(400);
+});
+
+document.getElementById('large').addEventListener('click', function () {
+    chart.setSize(600);
+});
+
+document.getElementById('auto').addEventListener('click', function () {
+    chart.setSize(null);
 });
 
 
